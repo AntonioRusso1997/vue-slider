@@ -12,20 +12,20 @@
     <title>Vue Slider</title>
 </head>
 <body>
-    <div class="container">
+    <div id="root" class="container">
         <div class="wrapper">
             <!-- Freccia "previous" -->
-            <div class="prev">
+            <div @click="prevPhoto" class="prev">
                 <i class="fas fa-angle-left"></i>
             </div>
 
             <!-- Contenitore imagini -->
             <div class="images">
-                <img src="img/image1.jpg" alt="Image error">
+                <img :src="photos[phCounter]" alt="Image error">
             </div>
 
             <!-- Freccia "next" -->
-            <div class="next">
+            <div @click="nextPhoto" class="next">
                 <i class="fas fa-angle-right"></i>
             </div>
 

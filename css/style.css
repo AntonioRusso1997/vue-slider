@@ -26,11 +26,13 @@ body {
 
 .wrapper .images {
     height: 100%;
+    width: 95%;
     text-align: center;
 }
 
 .wrapper .images img {
     height: 100%;
+    width: 100%;
 }
 
 .prev, .next {
