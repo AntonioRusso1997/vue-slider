@@ -6,6 +6,9 @@
 
 body {
     font-family: 'lato', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -28,6 +31,9 @@ body {
     height: 100%;
     width: 95%;
     text-align: center;
+    border: 2px solid white;
+    border-radius: 40px;
+    overflow: hidden;
 }
 
 .wrapper .images img {
@@ -39,6 +45,7 @@ body {
     cursor: pointer;
     color: #565ac5;
     font-size: 45px;
+    margin: 10px;
 }
 
 .nav {
@@ -47,7 +54,7 @@ body {
     bottom: 15px;
     transform: translateX(-50%);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
@@ -57,4 +64,19 @@ body {
 }
 .active {
     color: rgb(0, 90, 173);
+}
+
+.circle {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
 }

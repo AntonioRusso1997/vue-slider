@@ -7,6 +7,9 @@ const app = new Vue(
             phCounter: 0,
             photos: ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg", "img/image5.jpg", "img/image6.jpg"]
         },
+        mounted() {
+            this.startSlide()
+        },
         methods: {
             prevPhoto() {
                 this.phCounter -= 1;
@@ -15,7 +18,12 @@ const app = new Vue(
             nextPhoto() {
                 this.phCounter += 1;
                 if (this.phCounter == (this.photos.length)) this.phCounter = 0
+            },
+            startSlide() {
+                setInterval(() => {
+                    this.nextPhoto();
+                },3000)
             }
-        }
+        },
     }
 )

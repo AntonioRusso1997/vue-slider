@@ -33,6 +33,9 @@
             <div class="nav">
                 <i :class="(i == phCounter) ? 'active' : null" class="fas fa-circle" v-for="(photo, i) in photos"></i>
             </div>
+            <div class="circle">
+                {{ phCounter + 1}}
+            </div>
         </div>
     </div>
 
