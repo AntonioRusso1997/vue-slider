@@ -31,7 +31,9 @@
 
             <!-- Contenitore dei "pallini" dello slider -->
             <div class="nav">
-                <i :class="(i == phCounter) ? 'active' : null" class="fas fa-circle" v-for="(photo, i) in photos"></i>
+                <i @click="changePhoto(i)" :class="(i == phCounter) ? 'active' : null" class="fas fa-circle" v-for="(photo, i) in photos"></i>
+                <i @click="toggleVisibility" v-if="playVisible" class="fas fa-play playPause"></i>
+                <i @click="toggleVisibility" v-else class="fas fa-pause playPause"></i>
             </div>
             <div class="circle">
                 {{ phCounter + 1}}
